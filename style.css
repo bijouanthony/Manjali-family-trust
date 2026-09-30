@@ -1,0 +1,236 @@
+
+@font-face {
+    font-family: "CloisterBlack";
+    src: url("fonts/CloisterBlack.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.hero-bnr-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.logo-custom-font {
+    font-family: "CloisterBlack", serif !important;
+    font-size: clamp(1.6rem, 2.2vw, 2.2rem) !important;
+    line-height: 1.1 !important;
+}
+
+.custom-banner-manjaly {
+    background-image: url(Images/banner-image-07.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.custom-heading-clr {
+    color: wheat !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: clamp(2.4rem, 6vw, 4rem) !important;
+}
+
+.body-font-12-cust {
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem) !important;
+    font-weight: 300 !important;
+    line-height: 1.7 !important;
+}
+
+.baseline-custom {
+    font-size: 15px !important;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    line-height: 15px;
+    text-align: center;
+}
+
+.baseline-custom {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.custom-logotype-box {
+    text-align: center !important;
+}
+
+.logo-custom-manjalay {
+    font-size: 32px !important;
+    line-height: 22px !important;
+    letter-spacing: 2px !important;
+}
+
+.bottom-dev {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-dev p {
+    font-size: 11px;
+    font-weight: 300;
+    color: #93a8b3;
+    line-height: 11px;
+    margin: 0;
+}
+
+.bottom-dev img {
+    width: 60px;
+    height: auto !important;
+}
+
+@media (max-width: 1024px) {
+    .custom-banner-manjaly {
+        background-position: center top;
+    }
+
+    .custom-header .max-w-7xl {
+        height: auto;
+        min-height: 5.5rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-custom-font {
+        font-size: clamp(1.35rem, 5vw, 2rem) !important;
+    }
+
+    .custom-logotype-box {
+        max-width: 220px;
+    }
+
+    .baseline-custom {
+        justify-content: center;
+        font-size: 12px !important;
+        line-height: 1.2;
+    }
+
+    .custom-header .max-w-7xl {
+        gap: 0.75rem;
+    }
+
+    .custom-header a img {
+        width: 64px;
+    }
+
+    .custom-heading-clr {
+        letter-spacing: -0.02em;
+    }
+
+    .hero-bnr-img {
+        margin-top: 1rem;
+    }
+
+    .bottom-dev {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .custom-header {
+        position: sticky;
+    }
+
+    #mobile-toggle {
+        margin-left: auto;
+    }
+
+    .custom-header .max-w-7xl {
+        min-height: 4.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .custom-logotype-box {
+        max-width: 180px;
+    }
+
+    .custom-heading-clr {
+        font-size: clamp(2rem, 10vw, 3rem) !important;
+    }
+
+    main section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .grid.grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+
+    .grid.grid-cols-3 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.25rem;
+        text-align: center;
+    }
+
+    .grid.grid-cols-3 > div span:first-child {
+        font-size: clamp(1.5rem, 6vw, 2.3rem) !important;
+        line-height: 1.1 !important;
+        letter-spacing: -0.03em !important;
+    }
+
+    .grid.grid-cols-3 > div span:last-child {
+        font-size: clamp(0.58rem, 2.2vw, 0.72rem) !important;
+        line-height: 1.4 !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+    }
+
+    #directory-list {
+        grid-template-columns: 1fr;
+    }
+
+    #archives .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-custom-font {
+        font-size: 1.25rem !important;
+    }
+
+    .custom-logotype-box {
+        max-width: 150px;
+    }
+
+    .baseline-custom {
+        font-size: 10px !important;
+    }
+
+    .custom-header .max-w-7xl {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #rsvp-modal .victorian-card,
+    #reunion .victorian-card-dark {
+        padding: 1.25rem;
+    }
+
+    footer .max-w-7xl {
+        flex-direction: column;
+        text-align: center;
+    }
+}
